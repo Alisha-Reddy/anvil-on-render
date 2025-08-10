@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: anvil
+    env: docker
+    plan: starter
+    region: oregon
+    autoDeploy: true
+    dockerfilePath: ./Dockerfile
+    ports:
+      - port: 8545
+        protocol: tcp
